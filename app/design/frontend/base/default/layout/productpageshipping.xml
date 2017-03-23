@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <layout>
+    <catalog_product_view>
+        <reference name="product.info">
+            <block type="core/text_list" name="product.info.shipping" as="shipping" />
+        </reference>
+    </catalog_product_view>
+
     <webdevlopers_productpageshipping_skeleton>
         <reference name="head">
             <action method="addCss"><file>css/productpageshipping.css</file></action>
