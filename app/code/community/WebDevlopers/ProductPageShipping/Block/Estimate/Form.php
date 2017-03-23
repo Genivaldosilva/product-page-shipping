@@ -52,7 +52,7 @@ class WebDevlopers_ProductPageShipping_Block_Estimate_Form extends WebDevlopers_
       return false;
     }
 
-    return true;
+    $method = $methodMap[$fieldName];
     
     foreach ($this->getCarriers() as $carrier) {
       if ($carrier->$method()) {
