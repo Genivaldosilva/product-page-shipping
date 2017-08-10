@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <layout>
-
     <webdevlopers_productpageshipping_skeleton>
         <reference name="product.info">
             <block type="core/text_list" name="product.info.shipping" as="shipping" />
-        </reference>
-        <reference name="head">
-            <action method="addCss"><file>css/productpageshipping.css</file></action>
         </reference>
         <block  name="shipping.estimate.form" type="webdevlopers_productpageshipping/estimate_form" template="webdevlopers/productpageshipping/estimate/form.phtml" />
     </webdevlopers_productpageshipping_skeleton>
@@ -28,7 +24,7 @@
 
     <webdevlopers_productpageshipping_content>
         <update handle="webdevlopers_productpageshipping_skeleton" />
-        <reference name="product.info.extrahint">
+        <reference name="product.info.shipping">
             <action method="insert"><block>shipping.estimate.form</block></action>
         </reference>
     </webdevlopers_productpageshipping_content>
